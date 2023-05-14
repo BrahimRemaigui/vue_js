@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="ins.js" ></script>
+    <div id="app">
+        <p>My name is {{ author }} i am {{age}} </p>
+        <button v-on:click="showOrmask">Show or mask</button>
+        <div v-if="show">
+            <button v-on:click="age++">Incriment age</button>
+            <button v-on:click="age--">Decrease age</button>
+            <div @click="chanegeName('Remaig')">for change the name click</div>
+        </div>
+        <div class="box" @mouseover="handLe()">mouseover(enter)</div>
+        <div class="box" @mouseleave="leave">mouseleave</div>
+        <div class="box" @dblclick="double">double click</div>
+        <div class="box"></div>
+    </div>
+
+
+
+</body>
+
+</html>
