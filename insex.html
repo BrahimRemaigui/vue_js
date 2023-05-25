@@ -14,17 +14,17 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="ins.js" ></script>
     <div id="app">
-        <p>My name is {{ author }} i am {{age}} </p>
-        <button v-on:click="showOrmask">Show or mask</button>
-        <div v-if="show">
-            <button v-on:click="age++">Incriment age</button>
-            <button v-on:click="age--">Decrease age</button>
-            <div @click="chanegeName('Remaig')">for change the name click</div>
-        </div>
-        <div class="box" @mouseover="handLe()">mouseover(enter)</div>
-        <div class="box" @mouseleave="leave">mouseleave</div>
-        <div class="box" @dblclick="double">double click</div>
-        <div class="box"></div>
+            <p>My name is {{ author }} i am {{age}} </p>
+            <button v-on:click="showOrmask">Show or mask</button>
+            <div v-if="show">
+                <button v-on:click="age++">Incriment age</button>
+                <button v-on:click="age--">Decrease age</button>
+                <div @click="chanegeName('Remaig')">for change the name click</div>
+            </div>
+            <div class="box" @mouseover="handLe()">mouseover(enter)</div>
+            <div class="box" @mouseleave="leave">mouseleave</div>
+            <div class="box" @dblclick="double">double click</div>
+            <div class="box"></div>
     </div>
 
 
